@@ -29,8 +29,56 @@ $b = 30;
 //echo "$a / $b is:\n", $a / $b;
 //echo "$a % $b is:\n", $a % $b;
 //echo "$a pwr $b is:\n", $a ** $b;
-echo "$a + $b * 5 is:\n", $a + $b * 5;
+//echo "$a + $b * 5 is:\n", $a + $b * 5;
+echo "($a + $b) * 5 is:\n", ($a + $b) * 5;
 ?></p>
+<hr>
+
+<p><b>Assignment Operators</b><br><br>
+<?php
+//Assigniong data to "a"
+$a = 10;
+$a += 20;
+$b +=20;
+echo $a;
+echo "\n";
+echo "<br>";
+echo $b;
+
+?></p>
+<hr>
+
+<p><b>Comparison Operators</b><br><br>
+<?php
+$a = 10;
+$b = "10";
+/*if  ($a == $b) {
+echo "This Statement is true";
+} //this statement checks if the variables are equal */
+
+/* if  ($a === $b) {
+echo "This Statement is true";
+} // This statement checks whether both the variables and the data types are equal*/
+
+if  ($a != $b) {
+echo "This Statement is true";
+} // This statement checks whether the variables are not true
+?></p>
+<hr>
+
+<p><b>Logical Operators</b><br><br>
+<?php
+$a = 10;
+$b = 20;
+
+$c = 10;
+$d = 20;
+if  ($a == $b) {
+echo "This Statement is true";
+} 
+
+?></p>
+<hr>
 
 </body>
 </html>
