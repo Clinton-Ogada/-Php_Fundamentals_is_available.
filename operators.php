@@ -50,7 +50,7 @@ echo $b;
 
 <p><b>Comparison Operators</b><br><br>
 <?php
-$a = 10;
+$a = 20;
 $b = "10";
 /*if  ($a == $b) {
 echo "This Statement is true";
@@ -69,14 +69,38 @@ echo "This Statement is true";
 <p><b>Logical Operators</b><br><br>
 <?php
 $a = 10;
-$b = 20;
+$b = 10;
 
-$c = 10;
-$d = 20;
-if  ($a == $b) {
-echo "This Statement is true";
+$c = 40;
+$d = 10;
+//Checking whether both statements are true
+/*if  ($a == $b and $c == $d) {
+    echo "This Statement is true";
+} */
+//Checking whther one of the statements is true
+if  ($a == $b or $c == $d and $a == $d) {
+    echo "This Statement is true";
+} 
+echo"<br>";
+//Another way to write the above expression is to use the PIPE(||) and the AND($$) symbols
+if  ($a == $b || $c == $d && $a == $d) {
+    echo "This Statement is true";
 } 
 
+?></p>
+<hr>
+<
+<p><b>Incrementing/Decrementing Operators</b><br><br>
+<?php
+$a = 10;
+$b = 10;
+
+$c = 40;
+$d = 10;
+echo ++$a;
+echo --$b;
+$c += 1;
+echo ++$c;
 ?></p>
 <hr>
 
